@@ -10,7 +10,7 @@ html, body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body{
+body.homepage{
   background-image: url("bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,4 +44,25 @@ body{
 .button:hover{
   background-color: white;
   color:blueviolet;
+}
+
+
+/*
+chat page
+*/
+.member-area{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  width:30%;
+  background: black;
+}
+.messages-area{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:30%;
+  width:70%;
+  background: grey;
 }
