@@ -46,7 +46,6 @@ body.homepage{
   color:blueviolet;
 }
 
-
 /*
 chat page
 */
@@ -56,7 +55,9 @@ chat page
   bottom: 0;
   left:0;
   width:30%;
-  background: black;
+  background:navy;
+  border-right:solid 1px black;
+
 }
 .messages-area{
   position: fixed;
@@ -64,5 +65,73 @@ chat page
   bottom:0;
   left:30%;
   width:70%;
-  background: grey;
+  background-color: azure
+  border-right:solid 1px black;
+}
+.user-info{
+  color:navy;
+  padding: 10px;
+  background: white;
+}
+.logout{
+  float: right;
+  background: ;
+}
+.member{
+  padding:10px;
+  border-bottom:solid 1px white;
+  color:white;
+  cursor: pointer;
+}
+.member:hover{
+  background: purple;
+}
+.member.active{
+  font-weight: bold;
+  color:darkblue;
+  background-color: azure;
+}
+.chat-info{
+  background-color: navy;
+  font:white;
+  padding: 10px;
+  color:white;
+}
+.messages{
+  background:azure;
+  height: 80%;
+  overflow:auto;
+  padding: 10px;
+}
+.message{
+  background: white;
+  padding: 10px;
+ margin: 10px;
+  border-radius: 4px;
+  width:50%;
+  float: right;
+}
+.message.by-user{
+  background-color: purple;
+  padding: 10px;
+  color:white;
+  margin: 10px;
+  border-radius: 4px;
+  width:50%;
+  float: left;
+}
+.chat-form{
+  position: fixed;
+  left:30%;
+  bottom:0;
+  width:70%;
+  background: white;
+  padding: 15px;
+}
+.chat-message{
+  padding: 10px;
+  border:solid 1px lightgrey;
+  border-radius: 4px;
+  width:100%;
+  display:block;
 }
