@@ -10,17 +10,13 @@
   <body>
     <div class="member-area">
         <div class="user-info">
-          Riya Talwar
-          <span class="logout">Log Out</span>
+            <span id="username"></span>
+          <button class="logout">Log Out</button>
         </div>
 
-        <div class="members">
-          <div class="member active">
-            Abhin
-          </div>
-          <div class="member">
-            Sravani
-          </div>
+        <div id="members" class="members">
+
+
         </div>
     </div>
 
@@ -28,55 +24,36 @@
       <div class="chat-info">
          Abhin
       </div>
-<div class="messages">
-      <div class="message">
-        Hi!
-      </div>
-      <div class="message by-user">
-        Where r u?
-      </div>
-      <div class="message">
-        Me in web dev session
-      </div>
-      <div class="message by-user">
-        sitting next to u
-      </div>
+<div class="messages" id="messages">
 
-      <div class="message">
-        Hi!
-      </div>
-      <div class="message by-user">
-        Where r u?
-      </div>
-      <div class="message">
-        Me in web dev session
-      </div>
-      <div class="message by-user">
-        sitting next to u
-      </div>
 
-      <div class="message">
-        Hi!
-      </div>
-      <div class="message by-user">
-        Where r u?
-      </div>
-      <div class="message">
-        Me in web dev session
-      </div>
-      <div class="message by-user">
-        sitting next to u
-      </div>
+
     </div>
 
     <div class="chat-form">
-      <input type="text" class="chat-message"
+      <input type="hidden" id="chat_id"/>
+      <input id="message-text" type="text" class="chat-message"
       placeholder="write your message and press enter..."
       />
+      <button id="send-button">Send</button>
 
     </div>
 
     </div>
-
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDyoSjSZ2dOKycsDtUAA9e8E9z0cLifg60",
+        authDomain: "first1-53180.firebaseapp.com",
+        databaseURL: "https://first1-53180.firebaseio.com",
+        storageBucket: "first1-53180.appspot.com",
+        messagingSenderId: "125001846724"
+      };
+      firebase.initializeApp(config);
+    </script>
+        <script type="text/javascript" src="functions.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+          <script type="text/javascript" src="chat.js"></script>
   </body>
 </html>

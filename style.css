@@ -75,7 +75,10 @@ chat page
 }
 .logout{
   float: right;
-  background: ;
+  background: navy;
+  color:white;
+  cursor: pointer;
+  
 }
 .member{
   padding:10px;
